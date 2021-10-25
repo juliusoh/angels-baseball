@@ -15,7 +15,7 @@ const express = require('express');
 const app = express();
 const port = 1993;
 app.use(cors());
-const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.get('*', (req, res) =>
   res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
 );
