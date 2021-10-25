@@ -3,7 +3,7 @@ const csv = require('csv-parser');
 var cors = require('cors');
 const path = require('path');
 
-const inputFile = 'backEnd/data.csv';
+const inputFile = 'backend/data.csv';
 let results = [];
 
 fs.createReadStream(inputFile)
