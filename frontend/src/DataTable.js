@@ -16,7 +16,7 @@ const DataTable = () => {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await axios.get('http://localhost:1993/results');
+    const response = await axios.get('/results');
     setData(response.data);
     console.log(data);
   };
