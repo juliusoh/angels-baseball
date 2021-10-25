@@ -20,7 +20,9 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, '/frontend/build')));
 
-app.get('*');
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+});
 
 app.get('/results', (req, res) => {
   res.send(results);
