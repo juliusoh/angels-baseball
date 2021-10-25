@@ -18,7 +18,7 @@ const app = express();
 const port = 1993;
 app.use(cors());
 
-const __dirname = path.resolve();
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')));
