@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm install --prefix frontend && npm run build -- prefix frontend",
-    "start": "node backend/server",
+    "start": "node backend/index",
     "client": "npm start --prefix frontend"
   },
   "author": "julius oh",
