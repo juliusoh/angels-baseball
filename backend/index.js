@@ -2,7 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 var cors = require('cors');
 const path = require('path');
-
+const __dirname = path.resolve();
 const inputFile = 'backend/data.csv';
 let results = [];
 
