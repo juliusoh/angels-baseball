@@ -15,10 +15,10 @@ const express = require('express');
 const app = express();
 const port = 1993;
 app.use(cors());
-
-app.get('/', (req, res) => {
-  res.send('API IS RUNNING');
-});
+const __dirname = path.resolve();
+app.get('*', (req, res) =>
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+);
 
 app.get('/results', (req, res) => {
   res.send(results);
