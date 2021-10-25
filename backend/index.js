@@ -10,7 +10,7 @@ fs.createReadStream(inputFile)
   .pipe(csv())
   .on('data', (data) => results.push(data))
   .on('end', () => {
-    console.log(results);
+
   });
 
 const express = require('express');
@@ -18,11 +18,9 @@ const app = express();
 const port = 1993;
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, '/frontend/build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
-});
+app.get("/", (req, res) => {
+  res.send('api running')
+})
 
 app.get('/results', (req, res) => {
   res.send(results);
