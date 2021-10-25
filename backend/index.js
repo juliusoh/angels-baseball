@@ -2,7 +2,6 @@ const fs = require('fs');
 const csv = require('csv-parser');
 var cors = require('cors');
 const path = require('path');
-const __dirname = path.resolve();
 const inputFile = 'backend/data.csv';
 let results = [];
 
@@ -15,10 +14,6 @@ const express = require('express');
 const app = express();
 const port = 1993;
 app.use(cors());
-app.use(express.static(path.join(__dirname, '/frontend/build')));
-app.get('*', (req, res) =>
-  res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
-);
 
 app.get('/results', (req, res) => {
   res.send(results);
