@@ -17,7 +17,7 @@ const app = express();
 const port = 1993;
 app.use(cors());
 
-app.use(express.static(__dirname + "frontend/build"));
+
 
 
 app.get('/results', (req, res) => {
