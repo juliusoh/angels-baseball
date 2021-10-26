@@ -1,6 +1,6 @@
 # angels-baseball
 
-<img url="https://media.giphy.com/media/IqwwSQL0RYdGBCCeYY/giphy.gif"></img>
+<img src="https://media.giphy.com/media/IqwwSQL0RYdGBCCeYY/giphy.gif"></img>
 
 1. git clone this repository
 2. in the root folder, npm install
