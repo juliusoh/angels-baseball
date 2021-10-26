@@ -10,6 +10,9 @@ fs.createReadStream(inputFile)
   .on('data', (data) => results.push(data))
   .on('end', () => {});
 
+app.use(express.static(__dirname + "frontend/build"));
+
+
 const express = require('express');
 const app = express();
 const port = 1993;
