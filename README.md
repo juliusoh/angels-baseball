@@ -1,4 +1,7 @@
 # angels-baseball
+## LIVE DEMO
+[Link to live site](https://angels-baseball.juliusoh.com/)
+
 
 <img src="https://media.giphy.com/media/IqwwSQL0RYdGBCCeYY/giphy.gif"></img>
 
