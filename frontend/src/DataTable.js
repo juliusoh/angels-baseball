@@ -12,20 +12,20 @@ import Paper from '@material-ui/core/Paper';
 import MaterialTable from 'material-table';
 import axios from 'axios';
 import './DataTable.css';
-import csv from './data.csv';
+import data from './data.json'
 const DataTable = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  const getData = async () => {
-    const response = await axios.get('/results');
-    setData(response.data);
-    console.log(data);
-  };
+  // const getData = async () => {
+  //   const response = await axios.get('/results');
+  //   setData(response.data);
+  //   console.log(data);
+  // };
 
-  useEffect(() => {
-    getData();
+  // useEffect(() => {
+  //   // getData();
 
-  }, []);
+  // }, []);
 
   return (
     <div className="table-responsive">
