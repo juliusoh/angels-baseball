@@ -17,7 +17,9 @@ const app = express();
 const port = 1993;
 app.use(cors());
 
-
+app.get('/', (req, res) => {
+  res.send("api is running.")
+})
 
 
 app.get('/results', (req, res) => {

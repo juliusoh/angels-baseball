@@ -12,6 +12,7 @@ import Paper from '@material-ui/core/Paper';
 import MaterialTable from 'material-table';
 import axios from 'axios';
 import './DataTable.css';
+import csv from './data.csv';
 const DataTable = () => {
   const [data, setData] = useState([]);
 
@@ -23,6 +24,7 @@ const DataTable = () => {
 
   useEffect(() => {
     getData();
+
   }, []);
 
   return (
